@@ -1,0 +1,6 @@
+{
+  "name": "AMIGO",
+  "description": "AMIGO: The only 0% commission food delivery platform. Supporting merchants with zero fee listings and empowering customers to get original, fair prices directly.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
