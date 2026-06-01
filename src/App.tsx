@@ -165,13 +165,15 @@ export default function App() {
               >
                 Partner Registration
               </button>
-              <button
-                onClick={() => scrollToSection("registration")}
-                className="px-5 py-2.5 text-xs font-bold text-white bg-orange-600 hover:bg-orange-700 rounded-xl shadow-xs hover:shadow-md transition-all scale-100 active:scale-95 cursor-pointer"
+              <a
+                href="https://play.google.com"
+                target="_blank"
+                rel="noreferrer"
+                className="px-5 py-2.5 text-xs font-bold text-white bg-orange-600 hover:bg-orange-700 rounded-xl shadow-xs hover:shadow-md transition-all scale-100 active:scale-95 cursor-pointer inline-flex items-center justify-center"
                 id="header-cta"
               >
-                Partner with Us
-              </button>
+                Download AMIGO App
+              </a>
             </div>
 
             {/* Mobile burger toggle */}
@@ -241,12 +243,14 @@ export default function App() {
                   >
                     Quick Registration
                   </button>
-                  <button
-                    onClick={() => scrollToSection("registration")}
-                    className="w-full text-center py-3 text-sm font-bold text-white bg-orange-600 hover:bg-orange-700 rounded-xl transition-all cursor-pointer"
+                  <a
+                    href="https://play.google.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-full text-center py-3 text-sm font-bold text-white bg-orange-600 hover:bg-orange-700 rounded-xl transition-all cursor-pointer block"
                   >
-                    Partner with Us Now
-                  </button>
+                    Download AMIGO App
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -267,7 +271,7 @@ export default function App() {
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
                 <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-orange-100 text-orange-800 text-xs font-semibold">
                   <span className="h-1.5 w-1.5 rounded-full bg-orange-600 animate-pulse" />
-                  <span>Now Active in Major Metropolitan Zones</span>
+                  <span>Now live in Southern Avenue only</span>
                 </span>
                 <span className="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-xs font-semibold">
                   <span>0% Commission Ever</span>
@@ -338,7 +342,7 @@ export default function App() {
                 {/* 3. Partner with Us CTA which links right down to local sign-up */}
                 <button
                   onClick={() => scrollToSection("registration")}
-                  className="w-full sm:w-auto flex items-center justify-center space-x-2 py-4 px-6 text-sm font-bold text-orange-600 hover:text-white bg-white hover:bg-orange-600 border border-orange-500 rounded-2xl transition-all shadow-xs cursor-pointer"
+                  className="w-full sm:w-auto flex items-center justify-center space-x-2 py-3 px-6 text-sm font-bold text-orange-600 hover:text-white bg-white hover:bg-orange-600 border border-orange-500 rounded-2xl transition-all shadow-xs cursor-pointer"
                   id="hero-partner-cta"
                 >
                   <span>Restaurant Partner Registration</span>
@@ -350,9 +354,9 @@ export default function App() {
             {/* Right Column: Stunning flat lay Indian spread image */}
             <div className="lg:col-span-5 relative" id="hero-media-container">
               {/* Outer circular badge overlay */}
-              <div className="absolute -top-4 -left-4 z-20 bg-green-700 text-white rounded-full p-4 shadow-xl border-4 border-white flex flex-col items-center justify-center w-20 h-20 transform -rotate-12">
-                <span className="text-xs font-black uppercase text-center tracking-tight leading-none">Zero</span>
-                <span className="text-[10px] font-mono mt-0.5 text-center text-green-100">Fees</span>
+              <div className="absolute -top-4 -left-4 z-20 bg-green-700 text-white rounded-full p-3.5 shadow-xl border-4 border-white flex flex-col items-center justify-center w-24 h-24 transform -rotate-12">
+                <span className="text-xs font-black uppercase text-center tracking-tight leading-none">ZERO</span>
+                <span className="text-[9px] font-mono mt-0.5 text-center text-green-100 uppercase tracking-tight leading-none">Commssion</span>
               </div>
 
               {/* Image Frame styled like a sleek smartphone mockups or organic border canvas */}
@@ -817,11 +821,7 @@ export default function App() {
                   <p className="text-neutral-400 text-xs">Vetted in 20+ safety inspections annually.</p>
                 </div>
               </div>
-              {/* Overlapping tag */}
-              <div className="absolute bottom-6 right-0 bg-white text-neutral-900 border border-neutral-100 p-4 rounded-xl shadow-lg max-w-[170px] space-y-1 text-xs">
-                <p className="font-bold">100% Certified</p>
-                <p className="text-[10px] text-neutral-500">Every partner lists valid local municipal hygiene permits.</p>
-              </div>
+              {/* Tag removed */}
             </div>
 
             {/* Copy detailing our sanitary standards and business philosophy */}
@@ -872,9 +872,7 @@ export default function App() {
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             {/* Left Copy block explaining why to register */}
             <div className="lg:col-span-5 space-y-6 text-center lg:text-left">
-              <span className="px-3 py-1 rounded-full bg-orange-100 text-orange-800 text-[10px] uppercase tracking-widest font-bold">
-                Join 450+ Active Outlets
-              </span>
+              {/* Badge removed */}
               <h2 className="text-3xl sm:text-4xl font-extrabold font-sans text-neutral-900 tracking-tight leading-none">
                 Bring Your Dining Outlet Live on AMIGO
               </h2>
@@ -921,7 +919,7 @@ export default function App() {
       </section>
 
       {/* ACCORDION FAQ SECTION */}
-      <section className="py-20 bg-white border-t border-neutral-150" id="faq">
+      <section className="py-20 bg-white" id="faq">
         <div className="w-full max-w-3xl mx-auto px-4 sm:px-6">
           <div className="text-center space-y-3 mb-12">
             <span className="text-xs font-mono font-bold text-orange-600 uppercase tracking-widest flex items-center justify-center gap-1.5">
