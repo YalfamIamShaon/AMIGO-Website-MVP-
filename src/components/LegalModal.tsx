@@ -52,7 +52,7 @@ export default function LegalModal({ isOpen, onClose, initialTab }: LegalModalPr
               <div className="flex items-center space-x-2 pb-3 sm:pb-0">
                 <span className="h-2 w-2 rounded-full bg-orange-600 animate-pulse" />
                 <span className="font-mono text-xs text-neutral-500 font-semibold tracking-wider uppercase">
-                  FreshBite Hub
+                  AMIGO Platform
                 </span>
               </div>
 
@@ -131,8 +131,8 @@ export default function LegalModal({ isOpen, onClose, initialTab }: LegalModalPr
                   {/* Brand Image frame */}
                   <div className="relative h-48 sm:h-64 rounded-2xl overflow-hidden shadow-md">
                     <img
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3v0_R7VKeFBpgbgbeb9CT85zTy1KLoM2cCf9EF4M6peRxx2PM51mZgzCYBkdwoOMbE9uW8ofl0r1Nompd6d9SQPjhXkZHkWPfuJ3ok1_WZxTb-Ps7clABXqrBlo2sn-CyMpcbQW27tXkmcwcB55U2b_kKlGo5SKUrfZodU62KyXb6gKccGGhuDI_6HhMjp9PkM70QhWX8RXEmxlGM6HH5RrjWVB_qShy0ZtFnEQx8_zeTBHQ-tNVSrR2OB87Z3AWzUts-KByvGHU"
-                      alt="FreshBite Team Collaboration"
+                      src="https://images.unsplash.com/photo-1596797038530-2c107229654b?auto=format&fit=crop&w=800&h=600&q=80"
+                      alt="AMIGO Core Values & Authentic Ingredients"
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
                     />
@@ -171,7 +171,7 @@ export default function LegalModal({ isOpen, onClose, initialTab }: LegalModalPr
                     <div className="space-y-3">
                       <h3 className="text-lg font-bold text-neutral-900 flex items-center gap-2">
                         <Users className="h-5 w-5 text-green-700" />
-                        The Story Behind FreshBite
+                        The Story Behind AMIGO
                       </h3>
                       <p className="text-neutral-600 text-sm leading-relaxed">
                         {LegalData.about.history}
@@ -263,7 +263,7 @@ export default function LegalModal({ isOpen, onClose, initialTab }: LegalModalPr
             {/* Footer containing brand and confirm button */}
             <div className="border-t border-neutral-100 bg-neutral-50/50 p-4 flex justify-between items-center px-6">
               <span className="text-xs text-neutral-400 font-mono">
-                FreshBite Tech Solutions Ltd.
+                AMIGO (APPYGO SERVICES PRIVATE LIMITED)
               </span>
               <button
                 onClick={onClose}

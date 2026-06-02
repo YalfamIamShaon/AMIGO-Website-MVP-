@@ -97,7 +97,7 @@ export default function PartnerForm() {
             >
               {/* Restaurant Name */}
               <div className="space-y-1">
-                <label className="block text-xs font-semibold text-neutral-600 uppercase tracking-wider">
+                <label className="block text-xs font-bold font-heading text-neutral-600 uppercase tracking-wider">
                   Restaurant Name *
                 </label>
                 <div className="relative rounded-xl shadow-xs">
@@ -118,7 +118,7 @@ export default function PartnerForm() {
               {/* Contact Name & Phone Row */}
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-1">
-                  <label className="block text-xs font-semibold text-neutral-600 uppercase tracking-wider">
+                  <label className="block text-xs font-bold font-heading text-neutral-600 uppercase tracking-wider">
                     Full Name *
                   </label>
                   <div className="relative rounded-xl shadow-xs">
@@ -137,7 +137,7 @@ export default function PartnerForm() {
                 </div>
 
                 <div className="space-y-1">
-                  <label className="block text-xs font-semibold text-neutral-600 uppercase tracking-wider">
+                  <label className="block text-xs font-bold font-heading text-neutral-600 uppercase tracking-wider">
                     Phone number *
                   </label>
                   <div className="relative rounded-xl shadow-xs">
@@ -159,7 +159,7 @@ export default function PartnerForm() {
               {/* FSSAI & City Row */}
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-1">
-                  <label className="block text-xs font-semibold text-neutral-600 uppercase tracking-wider">
+                  <label className="block text-xs font-bold font-heading text-neutral-600 uppercase tracking-wider">
                     FSSAI Number *
                   </label>
                   <div className="relative rounded-xl shadow-xs">
@@ -179,7 +179,7 @@ export default function PartnerForm() {
                 </div>
 
                 <div className="space-y-1">
-                  <label className="block text-xs font-semibold text-neutral-600 uppercase tracking-wider">
+                  <label className="block text-xs font-bold font-heading text-neutral-600 uppercase tracking-wider">
                     City *
                   </label>
                   <div className="relative rounded-xl shadow-xs">
@@ -201,7 +201,7 @@ export default function PartnerForm() {
               {/* Select Options Columns */}
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-1">
-                  <label className="block text-xs font-semibold text-neutral-600 uppercase tracking-wider">
+                  <label className="block text-xs font-bold font-heading text-neutral-600 uppercase tracking-wider">
                     Primary Cuisine
                   </label>
                   <select
@@ -220,7 +220,7 @@ export default function PartnerForm() {
                 </div>
 
                 <div className="space-y-1">
-                  <label className="block text-xs font-semibold text-neutral-600 uppercase tracking-wider">
+                  <label className="block text-xs font-bold font-heading text-neutral-600 uppercase tracking-wider">
                     Business Type *
                   </label>
                   <select
