@@ -98,11 +98,6 @@ export default function Footer() {
                 </button>
               </li>
               <li>
-                <button onClick={() => handlePageNavigate("/about")} className="hover:text-white transition-colors cursor-pointer text-left">
-                  About Us
-                </button>
-              </li>
-              <li>
                 <button onClick={() => scrollToSection("faq")} className="hover:text-white transition-colors cursor-pointer text-left">
                   FAQ
                 </button>
@@ -120,17 +115,17 @@ export default function Footer() {
             <h4 className="font-mono text-xs font-bold text-white uppercase tracking-wider">Company Policies</h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <button onClick={() => handlePageNavigate("/about")} className={`transition-colors cursor-pointer text-left ${pathname?.includes("/about") ? "text-orange-500 font-semibold" : "hover:text-white"}`}>
+                <button onClick={() => handlePageNavigate("/about/")} className={`transition-colors cursor-pointer text-left ${pathname?.includes("/about") ? "text-orange-500 font-semibold" : "hover:text-white"}`}>
                   About Our Mission & Story
                 </button>
               </li>
               <li>
-                <button onClick={() => handlePageNavigate("/terms")} className={`transition-colors cursor-pointer text-left ${pathname?.includes("/terms") ? "text-orange-500 font-semibold" : "hover:text-white"}`}>
+                <button onClick={() => handlePageNavigate("/terms/")} className={`transition-colors cursor-pointer text-left ${pathname?.includes("/terms") ? "text-orange-500 font-semibold" : "hover:text-white"}`}>
                   Terms & Conditions (T&C)
                 </button>
               </li>
               <li>
-                <button onClick={() => handlePageNavigate("/privacy")} className={`transition-colors cursor-pointer text-left ${pathname?.includes("/privacy") ? "text-orange-500 font-semibold" : "hover:text-white"}`}>
+                <button onClick={() => handlePageNavigate("/privacy/")} className={`transition-colors cursor-pointer text-left ${pathname?.includes("/privacy") ? "text-orange-500 font-semibold" : "hover:text-white"}`}>
                   Privacy Policy Rules
                 </button>
               </li>
@@ -183,9 +178,9 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} AMIGO (APPYGO SERVICES PRIVATE LIMITED). All Rights Reserved.
           </div>
           <div className="flex space-x-6">
-            <button onClick={() => handlePageNavigate("/terms")} className={`hover:text-neutral-300 ${pathname?.includes("/terms") ? "text-orange-500" : ""}`}>T&C Agreements</button>
-            <button onClick={() => handlePageNavigate("/privacy")} className={`hover:text-neutral-300 ${pathname?.includes("/privacy") ? "text-orange-500" : ""}`}>Privacy Clauses</button>
-            <button onClick={() => handlePageNavigate("/about")} className={`hover:text-neutral-300 ${pathname?.includes("/about") ? "text-orange-500" : ""}`}>About Us</button>
+            <button onClick={() => handlePageNavigate("/terms/")} className={`hover:text-neutral-300 ${pathname?.includes("/terms") ? "text-orange-500" : ""}`}>T&C Agreements</button>
+            <button onClick={() => handlePageNavigate("/privacy/")} className={`hover:text-neutral-300 ${pathname?.includes("/privacy") ? "text-orange-500" : ""}`}>Privacy Clauses</button>
+            <button onClick={() => handlePageNavigate("/about/")} className={`hover:text-neutral-300 ${pathname?.includes("/about") ? "text-orange-500" : ""}`}>About Us</button>
           </div>
         </div>
       </div>

@@ -101,7 +101,7 @@ export default function Header() {
               Why Us
             </button>
             <button
-              onClick={() => navigateToPage("/about")}
+              onClick={() => navigateToPage("/about/")}
               className={`text-sm font-medium transition-colors cursor-pointer ${
                 pathname?.includes("/about") ? "text-orange-600 font-semibold" : "text-neutral-600 hover:text-neutral-900"
               }`}
@@ -185,7 +185,7 @@ export default function Header() {
                 Why Us
               </button>
               <button
-                onClick={() => navigateToPage("/about")}
+                onClick={() => navigateToPage("/about/")}
                 className="block w-full text-left py-2 font-medium text-neutral-700 hover:text-orange-600 transition-colors cursor-pointer"
               >
                 About Us
