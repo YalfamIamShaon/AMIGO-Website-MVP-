@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -8,6 +9,15 @@ import { Heart, Users, CheckCircle2 } from "lucide-react";
 
 export default function AboutPage() {
   const { about } = LegalData;
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div className="bg-[#FAF9F6] text-neutral-800 min-h-screen font-sans antialiased selection:bg-orange-500 selection:text-white flex flex-col justify-between">

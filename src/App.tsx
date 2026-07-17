@@ -63,6 +63,7 @@ const getPricingDetails = (itemPrice: number) => {
 
 export default function App() {
   const router = useRouter();
+  const [mounted, setMounted] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const [showBetaPopup, setShowBetaPopup] = useState(false);
@@ -71,6 +72,7 @@ export default function App() {
   const [compareFood, setCompareFood] = useState(0);
 
   useEffect(() => {
+    setMounted(true);
     const handleHashChange = () => {
       const hash = typeof window !== "undefined" ? window.location.hash : "";
       if (hash) {
@@ -171,6 +173,10 @@ export default function App() {
     }
     setMobileMenuOpen(false);
   };
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div className="bg-[#FAF9F6] text-neutral-800 min-h-screen font-sans antialiased selection:bg-orange-500 selection:text-white" id="main-app-container">
