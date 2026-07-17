@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useRef, FormEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Store, User, Phone, Mail, MapPin, DollarSign, ArrowRight, Check, X, Building, Loader2, Sparkles, Smartphone, ShieldCheck } from "lucide-react";
@@ -11,7 +13,7 @@ export default function PartnerForm() {
     city: "",
     cuisine: "indian",
     experience: "new",
-    businessType: "restaurant",
+    businessType: "meals",
     consent: false
   });
 
@@ -78,8 +80,8 @@ export default function PartnerForm() {
           <h3 className="text-2xl font-bold font-sans tracking-tight">
             Partner Quick Registration
           </h3>
-          <p className="text-neutral-400 text-xs">
-            Submit your details in 30 seconds and activate your 0% commission store.
+          <p className="text-neutral-400 text-xs font-sans">
+            It takes 30 seconds to claim your 0% commission online store.
           </p>
         </div>
       </div>

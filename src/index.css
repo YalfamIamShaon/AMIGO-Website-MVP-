@@ -1,33 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800;900&family=Parkinsans:wght@300;400;500;600;700;800;900&display=swap');
+
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Urbanist:wght@700;800&display=swap');
-
 @theme {
-  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
-  --font-heading: "Urbanist", ui-sans-serif, system-ui, sans-serif;
-  --color-orange-50: #fef2f2;
-  --color-orange-100: #fee2e2;
-  --color-orange-200: #fecaca;
-  --color-orange-300: #fca5a5;
-  --color-orange-400: #f87171;
-  --color-orange-500: #ae0000;
-  --color-orange-600: #ae0000;
-  --color-orange-650: #930000;
-  --color-orange-700: #8c0000;
-  --color-orange-800: #730000;
-  --color-orange-850: #620000;
-  --color-orange-900: #550000;
-  --color-orange-950: #330000;
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Parkinsans", ui-sans-serif, system-ui, sans-serif;
+  --color-orange-50: #fff0fc;
+  --color-orange-100: #ffe1fa;
+  --color-orange-200: #ffc2f4;
+  --color-orange-300: #ff91ec;
+  --color-orange-400: #ff52e0;
+  --color-orange-500: #FF00D4;
+  --color-orange-600: #FF00D4;
+  --color-orange-650: #e000bc;
+  --color-orange-700: #c200a2;
+  --color-orange-800: #a30089;
+  --color-orange-850: #8c0076;
+  --color-orange-900: #750062;
+  --color-orange-950: #4a003e;
 }
 
 body {
-  font-family: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  font-family: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
 }
 
 h1, .font-heading {
-  font-family: "Urbanist", ui-sans-serif, system-ui, sans-serif !important;
+  font-family: "Parkinsans", ui-sans-serif, system-ui, sans-serif !important;
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: "Urbanist", ui-sans-serif, system-ui, sans-serif !important;
+  font-family: "Parkinsans", ui-sans-serif, system-ui, sans-serif !important;
 }
