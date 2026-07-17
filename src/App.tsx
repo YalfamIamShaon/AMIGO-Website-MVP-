@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
+import { SafeAnimatePresence } from "./components/SafeAnimatePresence";
 import {
   Smartphone,
   Store,
@@ -833,9 +834,10 @@ export default function App() {
                     </span>
                   </button>
 
-                  <AnimatePresence initial={false}>
+                  <SafeAnimatePresence initial={false}>
                     {worksActive && (
                       <motion.div
+                        key={`faq-answer-${faq.q}`}
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
@@ -847,7 +849,7 @@ export default function App() {
                         </div>
                       </motion.div>
                     )}
-                  </AnimatePresence>
+                  </SafeAnimatePresence>
                 </div>
               );
             })}
@@ -856,9 +858,15 @@ export default function App() {
       </section>
 
       {/* JOINLIST BETA VERSION ACCESS POPUP */}
-      <AnimatePresence>
+      <SafeAnimatePresence>
         {showBetaPopup && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/65 backdrop-blur-xs">
+          <motion.div
+            key="beta-popup-backdrop"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/65 backdrop-blur-xs"
+          >
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -939,9 +947,9 @@ export default function App() {
                 </div>
               </div>
             </motion.div>
-          </div>
+          </motion.div>
         )}
-      </AnimatePresence>
+      </SafeAnimatePresence>
 
       <Footer />
     </div>

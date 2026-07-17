@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
+import { SafeAnimatePresence } from "./SafeAnimatePresence";
 import { AmigoLogo } from "./AmigoLogo";
 import { HelpCircle } from "lucide-react";
 
@@ -100,7 +101,7 @@ export default function Header() {
               Why Us
             </button>
             <button
-              onClick={() => navigateToPage("/about/index.html")}
+              onClick={() => navigateToPage("/about")}
               className={`text-sm font-medium transition-colors cursor-pointer ${
                 pathname?.includes("/about") ? "text-orange-600 font-semibold" : "text-neutral-600 hover:text-neutral-900"
               }`}
@@ -154,9 +155,10 @@ export default function Header() {
       </div>
 
       {/* Mobile Navigation Panel */}
-      <AnimatePresence>
+      <SafeAnimatePresence>
         {mobileMenuOpen && (
           <motion.div
+            key="mobile-nav-panel"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
@@ -183,7 +185,7 @@ export default function Header() {
                 Why Us
               </button>
               <button
-                onClick={() => navigateToPage("/about/index.html")}
+                onClick={() => navigateToPage("/about")}
                 className="block w-full text-left py-2 font-medium text-neutral-700 hover:text-orange-600 transition-colors cursor-pointer"
               >
                 About Us
@@ -214,7 +216,7 @@ export default function Header() {
             </div>
           </motion.div>
         )}
-      </AnimatePresence>
+      </SafeAnimatePresence>
     </header>
   );
 }

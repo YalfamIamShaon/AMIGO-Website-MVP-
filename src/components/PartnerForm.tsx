@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useRef, FormEvent } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
+import { SafeAnimatePresence } from "./SafeAnimatePresence";
 import { Store, User, Phone, Mail, MapPin, DollarSign, ArrowRight, Check, X, Building, Loader2, Sparkles, Smartphone, ShieldCheck } from "lucide-react";
 
 export default function PartnerForm() {
@@ -87,9 +88,10 @@ export default function PartnerForm() {
       </div>
 
       <div className="p-6 sm:p-8">
-        <AnimatePresence mode="wait">
+        <SafeAnimatePresence mode="wait">
           {!submitted ? (
             <motion.form
+              key="registration-form"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -253,9 +255,10 @@ export default function PartnerForm() {
               </div>
 
               {/* Error Flash */}
-              <AnimatePresence>
+              <SafeAnimatePresence>
                 {errorText && (
                   <motion.div
+                    key="registration-error-flash"
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
@@ -266,7 +269,7 @@ export default function PartnerForm() {
                     <span>{errorText}</span>
                   </motion.div>
                 )}
-              </AnimatePresence>
+              </SafeAnimatePresence>
 
               {/* Submit CTA */}
               <button
@@ -290,6 +293,7 @@ export default function PartnerForm() {
             </motion.form>
           ) : (
             <motion.div
+              key="registration-success-message"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
@@ -329,7 +333,7 @@ export default function PartnerForm() {
               </div>
             </motion.div>
           )}
-        </AnimatePresence>
+        </SafeAnimatePresence>
       </div>
 
       {/* Play Store direct merchant app link */}
